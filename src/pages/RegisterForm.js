@@ -22,7 +22,7 @@ export default function RegisterFrom() {
   const navigate = useNavigate();
 
   function handleClick() {
-    navigate("/");
+    navigate("/login");
   }
   const handleSubmit = (event) => {
     event.preventDefault();
