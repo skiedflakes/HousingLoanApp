@@ -10,8 +10,7 @@ export default function LoginRoutes () {
     return (
        
         <Routes>
-        <Route path="/" element={<Login/>}/>
-        <Route path="/register" element={<Register/>} />
+        <Route path="/" element={<Register/>}/>
         <Route path="/confirm-email" element={<ConfirmEmail/>} />
         <Route path="/terms-and-condition" element={<TermsAndCondition/>} />
         <Route path="/register-form" element={<RegisterForm/>} />
