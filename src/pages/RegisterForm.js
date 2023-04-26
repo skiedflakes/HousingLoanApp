@@ -22,22 +22,9 @@ export default function RegisterFrom() {
   const navigate = useNavigate();
 
   function handleClick() {
-    navigate("/login");
+    navigate("/");
   }
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get("email"),
-      password: data.get("password"),
-    });
 
-   
-
-    // Assign value to a key
-  sessionStorage.setItem("user", data);
-
-  };
 
   const handleChange = (event) => {
     event.preventDefault();
@@ -63,7 +50,7 @@ export default function RegisterFrom() {
         <Typography component="h1" variant="h5">
         HOUSING LOAN APPLICATION
         </Typography>
-        <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
+        <Box component="form" noValidate sx={{ mt: 1 }}>
 
 
         <Grid container spacing={2}   justifyContent="center" sx={{borderBottom:0.2,paddingBottom:3}}>

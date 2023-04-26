@@ -15,7 +15,7 @@ export default function LoginRoutes () {
         <Route path="/confirm-email" element={<ConfirmEmail/>} />
         <Route path="/terms-and-condition" element={<TermsAndCondition/>} />
         <Route path="/register-form" element={<RegisterForm/>} />
-        <Route path="/login" element={<Login/>}/>
+        {/* <Route path="/login" element={<Login/>}/> */}
        </Routes>
      
     );
